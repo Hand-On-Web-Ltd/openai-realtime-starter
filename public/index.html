@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI Realtime Voice Agent</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; background: #0f0f0f; color: #fff;
+    }
+    .container { text-align: center; max-width: 500px; padding: 2rem; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    p { color: #888; margin-bottom: 2rem; }
+    #callBtn {
+      width: 120px; height: 120px; border-radius: 50%;
+      border: none; cursor: pointer; font-size: 1rem;
+      font-weight: 600; transition: all 0.2s;
+      background: #10a37f; color: white;
+    }
+    #callBtn:hover { transform: scale(1.05); }
+    #callBtn.active { background: #e74c3c; }
+    #status {
+      margin-top: 1.5rem; font-size: 0.9rem; color: #666;
+      min-height: 1.5em;
+    }
+    #transcript {
+      margin-top: 2rem; text-align: left; max-height: 300px;
+      overflow-y: auto; font-size: 0.85rem; color: #aaa;
+    }
+    .msg { padding: 0.4rem 0; border-bottom: 1px solid #222; }
+    .msg.user { color: #10a37f; }
+    .msg.assistant { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎙️ Voice Agent</h1>
+    <p>Talk to GPT in real time</p>
+    <button id="callBtn" onclick="toggleCall()">Start Call</button>
+    <div id="status"></div>
+    <div id="transcript"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
