@@ -1,0 +1,25 @@
+{
+  "name": "@hand-on-web/openai-realtime-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for building voice agents with the OpenAI Realtime API",
+  "main": "server.js",
+  "homepage": "https://www.handonweb.com",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "openai",
+    "realtime-api",
+    "voice-ai",
+    "websocket",
+    "nodejs"
+  ],
+  "author": "Hand On Web Ltd <outreach@handonweb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
